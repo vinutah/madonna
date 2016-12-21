@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  21 DEC 2016 11:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  21 DEC 2016 11:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -366,10 +366,10 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 LaTeX Warning: Label `q1' multiply defined.
 
 
-LaTeX Warning: Label `c1' multiply defined.
-
-
 LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `c1' multiply defined.
 
 )
 \openout1 = `main.aux'.
@@ -448,7 +448,7 @@ Package epstopdf Info: Source file: <nn.eps>
 (epstopdf)             \includegraphics on input line 74.
 Package epstopdf Info: Output file is already uptodate.
 
-<nn-eps-converted-to.pdf, id=96, 468.75125pt x 407.5225pt>
+<nn-eps-converted-to.pdf, id=92, 468.75125pt x 407.5225pt>
 File: nn-eps-converted-to.pdf Graphic file (type pdf)
 
 <use nn-eps-converted-to.pdf>
@@ -485,13 +485,13 @@ Package epstopdf Info: Source file: <train.eps>
 (epstopdf)             \includegraphics on input line 203.
 Package epstopdf Info: Output file is already uptodate.
 
-<train-eps-converted-to.pdf, id=121, 141.52875pt x 130.4875pt>
+<train-eps-converted-to.pdf, id=117, 141.52875pt x 130.4875pt>
 File: train-eps-converted-to.pdf Graphic file (type pdf)
 
 <use train-eps-converted-to.pdf>
 Package pdftex.def Info: train-eps-converted-to.pdf used on input line 203.
 (pdftex.def)             Requested size: 42.45894pt x 39.14655pt.
- <wf.png, id=122, 783.8886pt x 388.8126pt>
+ <wf.png, id=118, 783.8886pt x 388.8126pt>
 File: wf.png Graphic file (type png)
 
 <use wf.png>
@@ -513,14 +513,14 @@ Package epstopdf Info: Source file: <frame.eps>
 (epstopdf)             \includegraphics on input line 226.
 Package epstopdf Info: Output file is already uptodate.
 
-<frame-eps-converted-to.pdf, id=163, 355.3275pt x 351.3125pt>
+<frame-eps-converted-to.pdf, id=159, 355.3275pt x 351.3125pt>
 File: frame-eps-converted-to.pdf Graphic file (type pdf)
 
 <use frame-eps-converted-to.pdf>
 Package pdftex.def Info: frame-eps-converted-to.pdf used on input line 226.
 (pdftex.def)             Requested size: 355.32661pt x 351.31163pt.
 
-<caffe_make.png, id=164, 789.6702pt x 444.2196pt>
+<caffe_make.png, id=160, 789.6702pt x 444.2196pt>
 File: caffe_make.png Graphic file (type png)
  <use caffe_make.png>
 Package pdftex.def Info: caffe_make.png used on input line 234.
@@ -560,19 +560,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--260
  []
 
 [3 <./wf.png> <./frame-eps-converted-to.pdf> <./caffe_make.png>]
-<lenet_ds.png, id=196, 1171.37625pt x 339.2675pt>
+<lenet_ds.png, id=192, 1171.37625pt x 339.2675pt>
 File: lenet_ds.png Graphic file (type png)
  <use lenet_ds.png>
 Package pdftex.def Info: lenet_ds.png used on input line 294.
 (pdftex.def)             Requested size: 1171.3734pt x 339.26666pt.
 
-<cifar10_ds.png, id=197, 480.79625pt x 372.39125pt>
+<cifar10_ds.png, id=193, 480.79625pt x 372.39125pt>
 File: cifar10_ds.png Graphic file (type png)
  <use cifar10_ds.png>
 Package pdftex.def Info: cifar10_ds.png used on input line 300.
 (pdftex.def)             Requested size: 480.79506pt x 372.39034pt.
 
-<imagenet_ds.png, id=198, 301.125pt x 251.43938pt>
+<imagenet_ds.png, id=194, 301.125pt x 251.43938pt>
 File: imagenet_ds.png Graphic file (type png)
  <use imagenet_ds.png>
 Package pdftex.def Info: imagenet_ds.png used on input line 306.
@@ -587,7 +587,7 @@ Overfull \hbox (8.71297pt too wide) in paragraph at lines 334--343
  [][] 
  []
 
-<cifar10_train_double.png, id=199, 474.573pt x 266.9172pt>
+<cifar10_train_double.png, id=195, 474.573pt x 266.9172pt>
 File: cifar10_train_double.png Graphic file (type png)
 
 <use cifar10_train_double.png>
@@ -597,7 +597,7 @@ Package pdftex.def Info: cifar10_train_double.png used on input line 347.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<cifar10_test_double.png, id=200, 485.1726pt x 272.6988pt>
+<cifar10_test_double.png, id=196, 485.1726pt x 272.6988pt>
 File: cifar10_test_double.png Graphic file (type png)
 
 <use cifar10_test_double.png>
@@ -607,7 +607,7 @@ Package pdftex.def Info: cifar10_test_double.png used on input line 354.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<cifar10_train_single.png, id=201, 477.9456pt x 268.8444pt>
+<cifar10_train_single.png, id=197, 477.9456pt x 268.8444pt>
 File: cifar10_train_single.png Graphic file (type png)
 
 <use cifar10_train_single.png>
@@ -617,7 +617,7 @@ Package pdftex.def Info: cifar10_train_single.png used on input line 361.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<cifar10_test_single.png, id=202, 478.4274pt x 269.3262pt>
+<cifar10_test_single.png, id=198, 478.4274pt x 269.3262pt>
 File: cifar10_test_single.png Graphic file (type png)
 
 <use cifar10_test_single.png>
@@ -627,7 +627,7 @@ Package pdftex.def Info: cifar10_test_single.png used on input line 368.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<lenet_train_double.png, id=203, 474.0912pt x 266.9172pt>
+<lenet_train_double.png, id=199, 474.0912pt x 266.9172pt>
 File: lenet_train_double.png Graphic file (type png)
 
 <use lenet_train_double.png>
@@ -637,7 +637,7 @@ Package pdftex.def Info: lenet_train_double.png used on input line 375.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<lenet_test_double.png, id=204, 488.0634pt x 274.626pt>
+<lenet_test_double.png, id=200, 488.0634pt x 274.626pt>
 File: lenet_test_double.png Graphic file (type png)
 
 <use lenet_test_double.png>
@@ -647,7 +647,7 @@ Package pdftex.def Info: lenet_test_double.png used on input line 382.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<lenet_train_single.png, id=205, 473.6094pt x 266.4354pt>
+<lenet_train_single.png, id=201, 473.6094pt x 266.4354pt>
 File: lenet_train_single.png Graphic file (type png)
 
 <use lenet_train_single.png>
@@ -657,7 +657,7 @@ Package pdftex.def Info: lenet_train_single.png used on input line 389.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<lenet_test_single.png, id=206, 476.982pt x 268.3626pt>
+<lenet_test_single.png, id=202, 476.982pt x 268.3626pt>
 File: lenet_test_single.png Graphic file (type png)
 
 <use lenet_test_single.png>
@@ -667,7 +667,7 @@ Package pdftex.def Info: lenet_test_single.png used on input line 396.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<cifar10.png, id=207, 1445.4pt x 903.375pt>
+<cifar10.png, id=203, 1445.4pt x 903.375pt>
 File: cifar10.png Graphic file (type png)
  <use cifar10.png>
 Package pdftex.def Info: cifar10.png used on input line 403.
@@ -676,7 +676,7 @@ Package pdftex.def Info: cifar10.png used on input line 403.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<lenet.png, id=208, 1445.4pt x 903.375pt>
+<lenet.png, id=204, 1445.4pt x 903.375pt>
 File: lenet.png Graphic file (type png)
  <use lenet.png>
 Package pdftex.def Info: lenet.png used on input line 410.
@@ -713,52 +713,43 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 467.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 467.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 467.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 316BDB5ECAB919656DA60E4A3165A069;1251.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 03586976652695EC1F1C7290C3DC78A0;1322
-(rerunfilecheck)             After:  316BDB5ECAB919656DA60E4A3165A069;1251.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 467.
  ) 
 Here is how much of TeX's memory you used:
- 7437 strings out of 493014
- 110153 string characters out of 6133351
+ 7435 strings out of 493014
+ 110123 string characters out of 6133351
  208650 words of memory out of 5000000
- 10789 multiletter control sequences out of 15000+600000
+ 10788 multiletter control sequences out of 15000+600000
  43807 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,16n,28p,612b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.6.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/
-2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/20
-16/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2016/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dist/f
-onts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
-e1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/tim
-es/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (6 pages, 3417468 bytes).
+ 29i,16n,28p,612b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dist
+/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/t
+imes/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr
+8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (6 pages, 3417444 bytes).
 PDF statistics:
- 321 PDF objects out of 1000 (max. 8388607)
- 253 compressed objects within 3 object streams
- 63 named destinations out of 1000 (max. 500000)
- 275 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 317 PDF objects out of 1000 (max. 8388607)
+ 249 compressed objects within 3 object streams
+ 62 named destinations out of 1000 (max. 500000)
+ 267 words of extra memory for PDF output out of 10000 (max. 10000000)
 

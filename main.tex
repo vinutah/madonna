@@ -416,7 +416,7 @@ block was studied but is not part of this version 1.0.
 \section{DISCUSSION}
 
 We are adding a brief discussion section here as we spent, considerable time in the initial 
-investigation phase of Madonna, while we were adding support for Assistance in MADONNA.
+investigation phase of Madonna, while we were adding support for Assistance in our framework.
 
 \subsection{Ristretto} Ristretto, this tool uses floating point arithmetic to simulate
 fixed point behavior. 
@@ -427,8 +427,8 @@ part of our future releases of Madonna.
 
 \subsection{FPTuner}
 
-FPTuner is a reserach tool for rigorous floating point tuning. Adding support for 16-bit Floating point is quite easy, 
-it involves changing the wrapper scripts to FPTuner, and not its core search + optimization logic.
+FPTuner is a reserach tool for rigorous floating point tuning. Adding support for 16-bit floating point, which is currently
+lacks, is quite easy, it involves changing the wrapper scripts to FPTuner, and not its core search + optimization logic.
 Reason for not taking this direction is that, we know the input space quite well so all the low-precision 
 literature on CNN, use fixed 16-bit and not floating format for 16-bit  ( C/C++ does not have native support
 for half precision, will need to use external libraries like MPFR) . In addition to this the authors of 
