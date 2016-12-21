@@ -1,0 +1,1 @@
+./calculate.py TRAINLENET32
