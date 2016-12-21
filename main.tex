@@ -281,7 +281,9 @@ block was studied but is not part of this version 1.0.
 \subsection{Software}
 
 \begin{itemize}
-  \item Frontend   : The frontend for MADOANNA v1.0 is is python, they essentially consisty of the 
+  \item Frontend   : The frontend for MADOANNA v1.0 is is python, they essentially consists of the steps where the user
+        will setup the tuned DNN for running on the Deep Learning Hardware, and once the Energy numbers are obtained, 
+        the user can visualize the effects of his/her design choices, as shown in the Figure(\ref{fig:cifar}) and Figure(\ref{fig:lenet})
   \item Backend    : Energy measurerement, trigger-measure-save steps are implemented in C++, and abstracted to the user via API's
   \item Validation : There are simple unit tests for each block (\ref{fig:frame})
   \item Debugging  : There is minimal debugging support now, and Hangs and Haults are attributed to fixed, known documented reasons.
