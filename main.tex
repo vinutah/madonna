@@ -217,7 +217,9 @@ and superior empirical performance.
 
 \section{PROPOSAL}
          
-Neural net architects who work on applications that are compute-intensive, especially on projects like Drones, Autonomous robotic systems, Mobile medical imaging, and Intelligent Video Analytics (IVA) 
+Neural net architects who work on applications that are compute-intensive, especially on projects like Drones, Autonomous robotic systems, Mobile medical imaging, and Intelligent Video Analytics (IVA) are given strict power and running time budgets. They already have several design parameters to search over, for example which method to use to initialize weights, which activation function to use in which layer, which cost function to use, how to set the paramters like $\eta$, epochs mini-batch, $\lambda$ , how to expand the training data, how to go about regularization choices L1/L2 vs Dropout. 
+One top of these, the fact that they need to tune for power, and numerical precision is very exausting, and the presence of tool in this area for assistance in making optimal choices and performing real energy measurements will be very useful. This is motivated by one of the lectures, we saw in class where we studied about Tools to explore accelerators, like Minerva tool to explore the design space, prune/quantize, lower voltages.
+Madonna is a proposal in this direction, a tool to explore numerical precision part of the design space and perform measurements as one designs the network.
 
 \begin{figure}[h]
   \centering
