@@ -416,7 +416,12 @@ block was studied but is not part of this version 1.0.
 \section{DISCUSSION}
 
 \subsection{Assistance in MADONNA}
-\subsection{Lessons Learnied while developing MADONNA v1.0}
+
+\subsection{Ristretto} Ristretto: uses floating point math to simulate fixed point behavior. 
+All operations actually work on 32-bit floating point numbers.
+If you want to lower the energy consumption on a GPU, you will have to convert Ristretto weights to fixed point and implement fixed point forward propagation in CUDA.
+
+\subsection{FPTuner}
 
 \section{RELATED WORK}
 
@@ -432,6 +437,11 @@ Brandon Reagen Paul Whatmough Robert Adolf Saketh Rama
 Hyunkwang Lee Sae Kyu Lee José Miguel Hernández-Lobato
 Gu-Yeon Wei David Brooks
 Harvard University, 2016 
+
+\bibitem{c1} Ristretto: Hardware-Oriented Approximation of Convolutional Neural Networks
+By Philipp Matthias Gysel B.S. (Bern University of Applied Sciences, Switzerland) 2012
+Thesis Submitted in partial satisfaction of the requirements for the degree of
+Master of Science
 
 \end{thebibliography}
 
