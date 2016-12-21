@@ -31,7 +31,8 @@ This project presents Madonna v1.0, a direction towares automated
 co-design approach across the numerical precision 
 to optimize DNN hardware accelerators.
 Compared to an 64-bit floating point accelerator
-baseline, we show that 32-bit floating points accelerators, reduces energy by 1.5×; aggressive.
+baseline, we show that 32-bit floating points accelerators, reduces energy by 1.5×;
+Training time improved by 1.22x and a observable improvement in Inference as well;
 Across three datasets, these power and energy measurements provide a collective average
 of 0.5W reduction and 2x energy reduction over an accelerator baseline
 without almost compromising DNN model accuracy. 
@@ -97,12 +98,11 @@ There is a divergence in the trends observed in the research outcomes of both
 these teams, the Minerva tool we studied in class, revealed a notable gap
 for implementations that achieve competitive prediction accuracy with power budgets 
 within the grasp of mobile and IoT platforms.
-
-In this project, we present Madonna, a ... 
-
-Madonna has 3 steps
-
-The 3 benchmark we simulated show that ...
+In this project, we present Madonna, a framework to perform energy measurements
+as the architect makes design decisions, this is motivated by the fact that 
+embedded apps are running with strict power budget and to measure early will provide confidence to the designer that he/she is not making any high power design choices, (explained more in PROPOSAL)
+Madonna has 4 steps, Launching tuned DNN on the embedded board, Initializing energy measurement setup, Postprocessing to visualize the running time , power and energy profile of the execution and Taking appropriate correcting action to meet the power, runtime budgets for the learning problem.
+The 3 benchmark we simulated show that there considerable reduction in runtime, power and energy using our framework.
 
 
 \section{BACKGROUND}
@@ -116,7 +116,7 @@ vector.
 
 \subsection{Deep Neural Nets}
 
-Deep Neural networks (DNNs) are defines as networks with one or more
+Deep Neural networks (DNNs) are defined as networks with one or more
 hidden layers.
 The nonlinear tranformations are performed by consecutive layers
 of fully connected artificial neurons.
@@ -132,7 +132,6 @@ the prediction error of the network on some training data.
 Figure(\ref{fig:nn}) shows a DNN, represented as a weighted 
 directed acyclic graph.  There are biological metaphors for 
 all these, the are called synapses for edges and neurons for nodes.
-
 
 
 \subsection{Training a DNN}
@@ -202,7 +201,7 @@ and superior empirical performance.
           \begin{figure}[h]
               \centering
               \includegraphics[width=50mm,scale=0.3]{train}
-              \caption{Quadratic and Cubic Polynomial Approximation}
+              \caption{Backpropagation used to train NN}
               \label{q1}
           \end{figure}
 
@@ -210,7 +209,7 @@ and superior empirical performance.
           \begin{figure}[h]
               \centering
               \includegraphics[width=85mm,scale=1]{wf}
-              \caption{Quadratic and Cubic Polynomial Approximation}
+              \caption{Workflow of Madonna, training LeNet on MNIST dataset}
               \label{q1}
           \end{figure}
 
@@ -280,7 +279,8 @@ block was studied but is not part of this version 1.0.
   \item Backend    : Energy measurerement, trigger-measure-save steps are implemented in C++, and abstracted to the user via API's
   \item Validation : There are simple unit tests for each block (\ref{fig:frame})
   \item Debugging  : There is minimal debugging support now, and Hangs and Haults are attributed to fixed, known documented reasons.
-  \item Download   : MADONNA 1.0 is Available for Download at GitHub
+  \item Download   : MADONNA 1.0 is Available for Download at GitHub \url{https://github.com/vinutah/madonna}
+
   \end{itemize}
 
   \subsection{Data Sets Evaluated}
@@ -423,5 +423,6 @@ block was studied but is not part of this version 1.0.
 A conclusion section is not required. Although a conclusion may review the main points of the paper, do not replicate the abstract as the conclusion. A conclusion might elaborate on the importance of the work or suggest applications and extensions. 
 
 
+\section{REFERENCES}
 
 \end{document}
