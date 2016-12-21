@@ -231,13 +231,13 @@ Madonna is a proposal in this direction, a tool to explore numerical precision p
 \end{figure}
 
 
-          \begin{figure}[h]
-              \centering
-              \includegraphics[width=85mm,scale=1]{caffe_make}
-              \caption{Power profile while building The deep learning 
-               framework Caffe, on Jetson TK1}
-              \label{caffe_make}
-          \end{figure}
+          %\begin{figure}[h]
+          %    \centering
+          %    \includegraphics[width=85mm,scale=1]{caffe_make}
+          %    \caption{Power profile while building The deep learning 
+          %     framework Caffe, on Jetson TK1}
+          %    \label{caffe_make}
+          %\end{figure}
 
 
 \section{EXPERIMENTAL METHODOLOGY}
@@ -248,10 +248,29 @@ Madonna is a proposal in this direction, a tool to explore numerical precision p
   \item The measurement hardware is a Yokogawa  wt310 \url{http://tmi.yokogawa.com/us/products/digital-power-analyzers/digital-power-analyzers/digital-power-meter-wt300e/}
   \end{itemize}
 
+  \begin{table}[h]
+\centering
+\caption{Specifications of the Jetson TK1}
+\label{spec_table}
+\begin{tabular}{|c|c|}
+\hline
+\multicolumn{2}{|c|}{Tegra K1}                                        \\ \hline
+\multicolumn{2}{|c|}{GPU}                                                  \\ \hline
+NVIDIA Kepler Architecture & 192 NVIDIA CUDA Cores                         \\ \hline
+\multicolumn{2}{|c|}{CPU}                                                  \\ \hline
+CPU Cores and Architecture & Quad Core ARM Cortex-A15 \\ \hline
+Max Clock Speed            & 2.3 GHz                                       \\ \hline
+\multicolumn{2}{|c|}{Memory}                                               \\ \hline
+Memory Type                & DDR3L and LPDDR3                              \\ \hline
+Max Memory Size            & 8 GB with 40-bit address extension            \\ \hline
+Process                    & 28 nm                                         \\ \hline
+\end{tabular}
+\end{table}
+
           \begin{figure}[h]
               \centering
-              \includegraphics[width=80mm,scale=1.1]{jetson}
-              \caption{LeNet on MNIST Data Set}
+              \includegraphics[width=85mm,scale=1.1]{jetson}
+              \caption{Schematic of nVIDIA TK1 board , with 192 Kepler GPUs used for DNN training and Inference}
               \label{fig:jetson}
           \end{figure}
 \subsection{Topology, Network Level}
