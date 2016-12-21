@@ -406,14 +406,14 @@ block was studied but is not part of this version 1.0.
               \centering
               \includegraphics[width=85mm,scale=1]{cifar10.png}
               \caption{A sample Madonna Pass, analyzing Cuda-Convnet on CIFAR-10 dataset}
-              \label{cifar}
+              \label{fig:cifar}
           \end{figure}
           
           \begin{figure}[h]
               \centering
               \includegraphics[width=85mm,scale=1]{lenet.png}
               \caption{A sample Madonna Pass, analyzing LeNet on MNIST dataset}
-              \label{lenet}
+              \label{fig:lenet}
           \end{figure}
 
 
@@ -446,6 +446,21 @@ We did not want to look at these tools for this class project, as the focus will
 \section{RELATED WORK}
 
 \subsection{Minerva}
+
+Minerva was published as Enabling Low-Power, Highly-Accurate Deep Neural Network Accelerators
+2016 ACM/IEEE 43rd Annual International Symposium on Computer Architecture in ISCA 2016.
+paper presents Minerva, 
+a highly automated co-design approach across the algorithm, 
+architecture, and circuit levels to optimize DNN hardware accelerators.
+Compared to an established fixed-point accelerator baseline, the authors showes that fine-grained, 
+heterogeneous data type optimization reduces power by 1.5x;, aggressive, in-line predication and 
+pruning of small activity values further reduces power by 2.0x;, and 
+active hardware fault detection coupled with domain-aware error mitigation eliminates an additional 2.7x; 
+through lowering SRAM voltages. 
+Across five datasets, these optimizations provide a collective average of 8.1x;
+power reduction over an accelerator baseline without compromising DNN model accuracy.
+Minerva enables highly accurate, ultra-low power DNN accelerators (in the range of tens of milliwatts), 
+making it feasible to deploy DNNs in power-constrained IoT and mobile devices.
 
 \section{CONCLUSIONS}
 
