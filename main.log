@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  21 DEC 2016 13:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  21 DEC 2016 13:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -548,36 +548,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 248--249
 \OT1/pcr/m/n/10 digital-[]power-[]analyzers /
  []
 
+<jetson.png, id=163, 587.3142pt x 331.4784pt>
+File: jetson.png Graphic file (type png)
+ <use jetson.png>
+Package pdftex.def Info: jetson.png used on input line 253.
+(pdftex.def)             Requested size: 587.31276pt x 331.47757pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--262
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
 []\OT1/ptm/m/n/10 The power mea-sure-ment com-puter,
  []
 
-[3 <./wf.png> <./frame-eps-converted-to.pdf> <./caffe_make.png>]
+[3 <./wf.png> <./frame-eps-converted-to.pdf> <./caffe_make.png> <./jetson.png>]
 <lenet_ds.png, id=196, 1171.37625pt x 339.2675pt>
 File: lenet_ds.png Graphic file (type png)
  <use lenet_ds.png>
-Package pdftex.def Info: lenet_ds.png used on input line 298.
+Package pdftex.def Info: lenet_ds.png used on input line 304.
 (pdftex.def)             Requested size: 1171.3734pt x 339.26666pt.
 
 <cifar10_ds.png, id=197, 480.79625pt x 372.39125pt>
 File: cifar10_ds.png Graphic file (type png)
  <use cifar10_ds.png>
-Package pdftex.def Info: cifar10_ds.png used on input line 304.
+Package pdftex.def Info: cifar10_ds.png used on input line 310.
 (pdftex.def)             Requested size: 480.79506pt x 372.39034pt.
 
 <imagenet_ds.png, id=198, 301.125pt x 251.43938pt>
 File: imagenet_ds.png Graphic file (type png)
  <use imagenet_ds.png>
-Package pdftex.def Info: imagenet_ds.png used on input line 310.
+Package pdftex.def Info: imagenet_ds.png used on input line 316.
 (pdftex.def)             Requested size: 301.12425pt x 251.43875pt.
 
-Overfull \hbox (8.71297pt too wide) in paragraph at lines 326--335
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (8.71297pt too wide) in paragraph at lines 332--341
  [][] 
  []
 
 
-Overfull \hbox (8.71297pt too wide) in paragraph at lines 341--350
+Overfull \hbox (8.71297pt too wide) in paragraph at lines 347--356
  [][] 
  []
 
@@ -585,14 +594,17 @@ Overfull \hbox (8.71297pt too wide) in paragraph at lines 341--350
 File: cifar10_train_double.png Graphic file (type png)
 
 <use cifar10_train_double.png>
-Package pdftex.def Info: cifar10_train_double.png used on input line 354.
+Package pdftex.def Info: cifar10_train_double.png used on input line 360.
 (pdftex.def)             Requested size: 474.57184pt x 266.91655pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 <cifar10_test_double.png, id=204, 485.1726pt x 272.6988pt>
 File: cifar10_test_double.png Graphic file (type png)
 
 <use cifar10_test_double.png>
-Package pdftex.def Info: cifar10_test_double.png used on input line 361.
+Package pdftex.def Info: cifar10_test_double.png used on input line 367.
 (pdftex.def)             Requested size: 485.17142pt x 272.69812pt.
 
 
@@ -602,7 +614,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: cifar10_train_single.png Graphic file (type png)
 
 <use cifar10_train_single.png>
-Package pdftex.def Info: cifar10_train_single.png used on input line 368.
+Package pdftex.def Info: cifar10_train_single.png used on input line 374.
 (pdftex.def)             Requested size: 477.94443pt x 268.84375pt.
 
 
@@ -612,7 +624,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: cifar10_test_single.png Graphic file (type png)
 
 <use cifar10_test_single.png>
-Package pdftex.def Info: cifar10_test_single.png used on input line 375.
+Package pdftex.def Info: cifar10_test_single.png used on input line 381.
 (pdftex.def)             Requested size: 478.42622pt x 269.32555pt.
 
 
@@ -622,7 +634,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: lenet_train_double.png Graphic file (type png)
 
 <use lenet_train_double.png>
-Package pdftex.def Info: lenet_train_double.png used on input line 382.
+Package pdftex.def Info: lenet_train_double.png used on input line 388.
 (pdftex.def)             Requested size: 474.09004pt x 266.91655pt.
 
 
@@ -632,7 +644,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: lenet_test_double.png Graphic file (type png)
 
 <use lenet_test_double.png>
-Package pdftex.def Info: lenet_test_double.png used on input line 389.
+Package pdftex.def Info: lenet_test_double.png used on input line 395.
 (pdftex.def)             Requested size: 488.06221pt x 274.62532pt.
 
 
@@ -642,7 +654,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: lenet_train_single.png Graphic file (type png)
 
 <use lenet_train_single.png>
-Package pdftex.def Info: lenet_train_single.png used on input line 396.
+Package pdftex.def Info: lenet_train_single.png used on input line 402.
 (pdftex.def)             Requested size: 473.60825pt x 266.43474pt.
 
 
@@ -652,7 +664,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: lenet_test_single.png Graphic file (type png)
 
 <use lenet_test_single.png>
-Package pdftex.def Info: lenet_test_single.png used on input line 403.
+Package pdftex.def Info: lenet_test_single.png used on input line 409.
 (pdftex.def)             Requested size: 476.98082pt x 268.36194pt.
 
 
@@ -661,7 +673,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <cifar10.png, id=211, 1445.4pt x 903.375pt>
 File: cifar10.png Graphic file (type png)
  <use cifar10.png>
-Package pdftex.def Info: cifar10.png used on input line 410.
+Package pdftex.def Info: cifar10.png used on input line 416.
 (pdftex.def)             Requested size: 1445.39648pt x 903.3728pt.
 
 
@@ -670,7 +682,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <lenet.png, id=212, 1445.4pt x 903.375pt>
 File: lenet.png Graphic file (type png)
  <use lenet.png>
-Package pdftex.def Info: lenet.png used on input line 417.
+Package pdftex.def Info: lenet.png used on input line 423.
 (pdftex.def)             Requested size: 1445.39648pt x 903.3728pt.
 
 
@@ -679,20 +691,18 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-[4 <./lenet_ds.png> <./cifar10_ds.png> <./imagenet_ds.png> <./cifar10_train_dou
-ble.png>]
+[4 <./lenet_ds.png> <./cifar10_ds.png> <./imagenet_ds.png>]
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¡ in font ptmr7t!
- [5 <./cifar10_test_double.png> <./cifar10_train_single.png> <./cifar10_test_si
-ngle.png> <./lenet_train_double.png>]
-Underfull \hbox (badness 1902) in paragraph at lines 487--489
+
+Underfull \hbox (badness 1902) in paragraph at lines 493--495
 []\OT1/ptm/m/n/8 Caffe: Jia, Yangqing and Shel-hamer, Evan and Don-ahue, Jeff
  []
 
 
-Underfull \hbox (badness 2359) in paragraph at lines 487--489
+Underfull \hbox (badness 2359) in paragraph at lines 493--495
 \OT1/ptm/m/n/8 and Karayev, Sergey and Long, Jonathan and Gir-shick, Ross
  []
 
@@ -707,29 +717,31 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the US letter (8.5in X 11in) paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 492.
-[6 <./lenet_test_double.png> <./lenet_train_single.png> <./lenet_test_single.pn
-g> <./cifar10.png> <./lenet.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 492.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 498.
+[5 <./cifar10_train_double.png> <./cifar10_test_double.png> <./cifar10_train_si
+ngle.png>] [6 <./cifar10_test_single.png> <./lenet_train_double.png> <./lenet_t
+est_double.png> <./lenet_train_single.png> <./lenet_test_single.png> <./cifar10
+.png> <./lenet.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 498.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 492.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 492.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 498.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 498.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 316BDB5ECAB919656DA60E4A3165A069;1251.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 492.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 498.
  ) 
 Here is how much of TeX's memory you used:
- 7445 strings out of 493014
- 110203 string characters out of 6133351
- 208747 words of memory out of 5000000
- 10794 multiletter control sequences out of 15000+600000
+ 7452 strings out of 493014
+ 110293 string characters out of 6133351
+ 209747 words of memory out of 5000000
+ 10799 multiletter control sequences out of 15000+600000
  44322 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,16n,28p,612b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,16n,28p,612b,321s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texl
@@ -747,10 +759,10 @@ st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dist
 ype1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/t
 imes/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr
 8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (6 pages, 3420292 bytes).
+Output written on main.pdf (6 pages, 4951386 bytes).
 PDF statistics:
- 330 PDF objects out of 1000 (max. 8388607)
- 262 compressed objects within 3 object streams
- 65 named destinations out of 1000 (max. 500000)
- 267 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 333 PDF objects out of 1000 (max. 8388607)
+ 263 compressed objects within 3 object streams
+ 66 named destinations out of 1000 (max. 500000)
+ 272 words of extra memory for PDF output out of 10000 (max. 10000000)
 
