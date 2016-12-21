@@ -209,12 +209,26 @@ and superior empirical performance.
 
 
           \begin{figure}[h]
-              \centering
-              \includegraphics[width=85mm,scale=1]{wf}
+              \centering 
+              \includegraphics[width=88mm,scale=1.1]{wf}
               \caption{Workflow of Madonna, training LeNet on MNIST dataset}
               \label{q1}
           \end{figure}
 
+\subsection{Numeric Precision}
+
+\begin{enumerate}
+  \item \textbf{Floating point} : IEEE 754 standardizes the floating point
+        implementation, single (32-bit) and double (64-bit) are 
+        most common and consistent implementations, there are specificaitons
+        for extended precision (80-bit), and other numeric data-types
+        for high precision in software, 128 bit extended precision
+        and arbitrary-precision arithmetic
+  \item \textbf{Fixed point numbers} : The signed and unsigned numbers
+        representation given are fixed point numbers, the binary point
+        is assumed to be at a fixed location say, at the end of the number, 
+        for 8 bits, this can represent all integers between -128 and 127
+\end{enumerate}
 
 
 \section{PROPOSAL}
