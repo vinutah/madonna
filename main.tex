@@ -415,17 +415,29 @@ block was studied but is not part of this version 1.0.
 
 \section{DISCUSSION}
 
-\subsection{Assistance in MADONNA}
+We are adding a brief discussion section here as we spent, considerable time in the initial 
+investigation phase of Madonna, while we were adding support for Assistance in MADONNA.
 
-\subsection{Ristretto} Ristretto: uses floating point math to simulate fixed point behavior. 
+\subsection{Ristretto} Ristretto, this tool uses floating point arithmetic to simulate
+fixed point behavior. 
 All operations actually work on 32-bit floating point numbers.
-If you want to lower the energy consumption on a GPU, you will have to convert Ristretto weights to fixed point and implement fixed point forward propagation in CUDA.
+If we want to lower the energy consumption on a GPU, we will have to convert Ristretto
+weights to fixed point and implement fixed point forward propagation in CUDA, is planned to be
+part of our future releases of Madonna.
 
 \subsection{FPTuner}
 
-FPTuner is for rigorous floating point tuning. Adding support for 16-bit Floating point is quite easy, it involves changing the wrapper scripts to FPTuner, and not its core search + optimization logic.
-Reason for not taking this direction is that, we know the input space quite well so all the low-precision literature on CNN, use fixed 16-bit and not floating format for 16-bit  ( C/C++ does not have native support for half precision, will need to use external libraries like MPFR) . In addition to this the authors of FPTuner suggested that FPTuner (in its fully developed* version) is well suited for application that have strict restriction on precision and error bounds and deep CNN’s training/classification are not such codes.
-The other direction was towards Improving its speed for precision allocation of medium/large expressions, the search time depends on three Externals tools These tools are Linear programming solver (Gurobi) , a Global optimizer (Gelphia) and A Tool for Rigorous Estimation of Round-off Floating-point Errors (FPTaylor) We did not want to look at these tools for this class project, as the focus will be far away from Class goals.
+FPTuner is a reserach tool for rigorous floating point tuning. Adding support for 16-bit Floating point is quite easy, 
+it involves changing the wrapper scripts to FPTuner, and not its core search + optimization logic.
+Reason for not taking this direction is that, we know the input space quite well so all the low-precision 
+literature on CNN, use fixed 16-bit and not floating format for 16-bit  ( C/C++ does not have native support
+for half precision, will need to use external libraries like MPFR) . In addition to this the authors of 
+FPTuner suggested that FPTuner (in its fully developed* version) is well suited for application that have
+strict restriction on precision and error bounds and deep CNN’s training/classification are not such codes.
+The other direction was towards Improving its speed for precision allocation of medium/large expressions, 
+the search time depends on three Externals tools These tools are Linear programming solver (Gurobi) ,
+a Global optimizer (Gelphia) and A Tool for Rigorous Estimation of Round-off Floating-point Errors (FPTaylor) 
+We did not want to look at these tools for this class project, as the focus will be far away from Class goals.
 
 \section{RELATED WORK}
 
