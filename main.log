@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  21 DEC 2016 12:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  21 DEC 2016 12:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -691,6 +691,15 @@ Missing character: There is no © in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¡ in font ptmr7t!
 
+Underfull \hbox (badness 1902) in paragraph at lines 484--486
+[]\OT1/ptm/m/n/8 Caffe: Jia, Yangqing and Shel-hamer, Evan and Don-ahue, Jeff
+ []
+
+
+Underfull \hbox (badness 2359) in paragraph at lines 484--486
+\OT1/ptm/m/n/8 and Karayev, Sergey and Long, Jonathan and Gir-shick, Ross
+ []
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -702,28 +711,28 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the US letter (8.5in X 11in) paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 486.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 489.
 [5 <./cifar10_train_double.png> <./cifar10_test_double.png> <./cifar10_train_si
 ngle.png> <./cifar10_test_single.png>] [6 <./lenet_train_double.png> <./lenet_t
 est_double.png> <./lenet_train_single.png> <./lenet_test_single.png> <./cifar10
 .png> <./lenet.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 486.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 489.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 486.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 486.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 489.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 489.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 316BDB5ECAB919656DA60E4A3165A069;1251.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 486.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 489.
  ) 
 Here is how much of TeX's memory you used:
- 7442 strings out of 493014
- 110174 string characters out of 6133351
+ 7444 strings out of 493014
+ 110185 string characters out of 6133351
  210659 words of memory out of 5000000
- 10792 multiletter control sequences out of 15000+600000
+ 10793 multiletter control sequences out of 15000+600000
  44322 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,16n,28p,612b,407s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -744,10 +753,10 @@ st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dist
 ype1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/t
 imes/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr
 8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (6 pages, 3419326 bytes).
+Output written on main.pdf (6 pages, 3419889 bytes).
 PDF statistics:
- 323 PDF objects out of 1000 (max. 8388607)
- 255 compressed objects within 3 object streams
- 64 named destinations out of 1000 (max. 500000)
+ 326 PDF objects out of 1000 (max. 8388607)
+ 258 compressed objects within 3 object streams
+ 65 named destinations out of 1000 (max. 500000)
  267 words of extra memory for PDF output out of 10000 (max. 10000000)
 
