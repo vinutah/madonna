@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  21 DEC 2016 09:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  21 DEC 2016 09:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -712,9 +712,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 440.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 440.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 440.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C2D901D60C3439092CAC27D7E3796678;1302.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: C2D901D60C3439092CAC27D7E3796678;1302
+(rerunfilecheck)             After:  24BDE27C8F6FD8BF4D566335A93C037F;1302.
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -745,7 +751,7 @@ st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dist
 ype1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/t
 imes/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr
 8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (6 pages, 3415672 bytes).
+Output written on main.pdf (6 pages, 3415857 bytes).
 PDF statistics:
  316 PDF objects out of 1000 (max. 8388607)
  248 compressed objects within 3 object streams
