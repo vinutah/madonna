@@ -322,7 +322,7 @@ block was studied but is not part of this version 1.0.
                               & \multicolumn{2}{c|}{TRAINING}                    & \multicolumn{3}{c|}{TESTING} \\ \cline{2-6} 
                               & POWER                  & ENERGY                  & POWER  & ENERGY  & ACC  \\ \hline
     MNIST                     & 7.5 W                  & 4492 J                  & 6.5W   & 35 J    & 97.5\%    \\ \hline
-    CIFAR-10                     & 9.5 W                  & 11662 J                 & 10W    & 62 J    & 73.3\%    \\ \hline
+    CIFAR-10                  & 9.5 W                  & 11662 J                 & 10 W    & 62 J    & 73.3\%    \\ \hline
     IMAGENET                  & \multicolumn{2}{c|}{Caffe Model Zoo}             & 13 J   & 722 J   & --        \\ \hline
   \end{tabular}
 \end{table}
@@ -337,8 +337,8 @@ block was studied but is not part of this version 1.0.
                               & \multicolumn{2}{c|}{TRAINING}                    & \multicolumn{3}{c|}{TESTING} \\ \cline{2-6} 
                               & POWER                  & ENERGY                  & POWER  & ENERGY  & ACC  \\ \hline
     MNIST                     & 8 W                    & 10828 J                 & 8.0 W  & 50 J    & 98.8\%    \\ \hline
-    CIFAR-10                     & 10 W                   & 31211 J                 & 10.5W  & 62 J    & 73.3\%    \\ \hline
-    IMAGENET                  & \multicolumn{2}{c|}{Caffe Model Zoo}             & 13 J   & 722 J   & --        \\ \hline
+    CIFAR-10                  & 10 W                   & 31211 J                 & 10.5 W & 65 J    & 74.3\%    \\ \hline
+    IMAGENET                  & \multicolumn{2}{c|}{Caffe Model Zoo}             & 13.5 J & 750 J   & --        \\ \hline
   \end{tabular}
 \end{table}
 
@@ -423,11 +423,18 @@ If you want to lower the energy consumption on a GPU, you will have to convert R
 
 \subsection{FPTuner}
 
+FPTuner is for rigorous floating point tuning. Adding support for 16-bit Floating point is quite easy, it involves changing the wrapper scripts to FPTuner, and not its core search + optimization logic.
+Reason for not taking this direction is that, we know the input space quite well so all the low-precision literature on CNN, use fixed 16-bit and not floating format for 16-bit  ( C/C++ does not have native support for half precision, will need to use external libraries like MPFR) . In addition to this the authors of FPTuner suggested that FPTuner (in its fully developed* version) is well suited for application that have strict restriction on precision and error bounds and deep CNN’s training/classification are not such codes.
+The other direction was towards Improving its speed for precision allocation of medium/large expressions, the search time depends on three Externals tools These tools are Linear programming solver (Gurobi) , a Global optimizer (Gelphia) and A Tool for Rigorous Estimation of Round-off Floating-point Errors (FPTaylor) We did not want to look at these tools for this class project, as the focus will be far away from Class goals.
+
 \section{RELATED WORK}
 
 \subsection{Minerva}
 
 \section{CONCLUSIONS}
+
+
+
 
 \begin{thebibliography}{99}
 
