@@ -104,7 +104,7 @@ In this project, we present Madonna, a framework to perform energy measurements
 as the architect makes design decisions, this is motivated by the fact that 
 embedded apps are running with strict power budget and to measure early will provide confidence to the designer that he/she is not making any high power design choices, (explained more in PROPOSAL)
 Madonna has 4 steps, Launching tuned DNN on the embedded board, Initializing energy measurement setup, Postprocessing to visualize the running time , power and energy profile of the execution and Taking appropriate correcting action to meet the power, runtime budgets for the learning problem.
-The 3 benchmark we simulated show that there considerable reduction in runtime, power and energy using our framework.
+The 3 benchmark we simulated show that there is considerable reduction in runtime, power and energy using our framework.
 
 
 \section{BACKGROUND}
@@ -112,7 +112,7 @@ The 3 benchmark we simulated show that there considerable reduction in runtime, 
 \subsection{Neural Nets}
 
 Neural networks are a biologically inspired machine learning method
-for a learning complex functions which apply mulpitle nonlinear
+for a learning complex functions which apply multiple nonlinear
 transformations to an input vector to obtain a corresponding output
 vector.
 
@@ -126,7 +126,7 @@ The first layer is called the input layer, and it has a neuron
 for each component in the input vector.
 The last layer is called the output layer and contains one neuron
 for each component in the output vector.
-Between input and outout layers, there are additional layers
+Between input and output layers, there are additional layers
 of hidden neurons.
 The strength of the connection between neurons is determined
 by a collection of weights whose values are tuned to minimize
@@ -173,7 +173,7 @@ on new inputs for which the corresponding outputs are not available.
 Each neuron output is obtained by computing a linear combination of the outputs
 of the neurons in the previous layer and then applying a nonlinear function, 
 where the first layer is fed by the input vector.
-Equation(\ref{eq:infer}) summarizes this section, each $w_{ij}^{(l)} \in R$
+Equation(\ref{eq:infer}) summarizes this section, where each $w_{ij}^{(l)} \in R$
 represents the connection strength between the $i^{th}$ neuron in layer $(l-1)$
 and $j^{th}$ neuron in the layer $(l)$. The nonlinear function $\theta$ allows
 DNN's to become universal approximators. While many different non linear functions
@@ -212,7 +212,7 @@ and superior empirical performance.
               \centering 
               \includegraphics[width=88mm,scale=1.1]{wf}
               \caption{Workflow of Madonna, training LeNet on MNIST dataset}
-              \label{q1}
+              \label{fig:wf}
           \end{figure}
 
 \subsection{Numeric Precision}
@@ -256,10 +256,25 @@ Madonna is a proposal in this direction, a tool to explore numerical precision p
 
 \section{EXPERIMENTAL METHODOLOGY}
 
-\subsection{Circuit Level}
+Madonna is primarily based on Jetson Embedded Platform, its a nVIDIA markets it as 
+Jetson K1 boards with GPU-accelerated parallel processing platform for 
+Deep learning. It has become the leading embedded visual computing
+platform. It features high-performance, low-energy computing for Deep Learning
+and Computer vision. Its considered ideal for compute-intensive embedded
+projects like drones, automomous robotic systems and mobile medical imaging.
+
+Makers and hobbyists are using nVIDIA Jetson TK1 to explore the
+future of embedded computing.
+
+Measurement Setup, that we used is by Yokogawa wt310, it belongs to the 
+WT300W family, its a digital power analyzer which provides extremely
+low current measurement capability of 50 $\mu$ Amps. This instrument 
+is ideal for engineers performing stand-by power measurements
+
+\subsection{DNN Hardware}
 \begin{itemize}
-  \item The nodes are Nvidia Jetson TK-1 boards \url{http://elinux.org/Jetson_TK1}
-  \item The measurement hardware is a Yokogawa  wt310 \url{http://tmi.yokogawa.com/us/products/digital-power-analyzers/digital-power-analyzers/digital-power-meter-wt300e/}
+  \item The nodes are Nvidia Jetson \cite{tk1} 
+  \item The measurement hardware is a Yokogawa \cite{wt310} 
   \end{itemize}
 
   \begin{table}[h]
@@ -330,6 +345,26 @@ block was studied but is not part of this version 1.0.
 
   \end{itemize}
 
+\subsection{Workflow}
+
+The experimental methodology used for this project is best summarized 
+by Block Diagram (\ref{fig:wf}) , the box indicating CAFFE \cite{c5} is the deep learning 
+framework used
+
+Madonna, is agnostic to the deep learning framework (Torch, Tensor Flow, etc ..) used 
+for training or infernce., The architect makes all his design choices here
+indicated by the box labelled DNN, which is deployed on the GPU accelerator,
+that is indicated by JETSON TK1, it powered via the box labelled M, where
+ we used custom shunt resistance based setup to record current drawn by 
+ the complete board during deep learning or inference, both the outputs
+  are recorded by the OUTPUT stage, which is post processed by Madonna, 
+  an example output is as shown in Figure (\ref{fig:cifar}) and (\ref{fig:lenet})
+  The architect does the budget analysis as he now has power and energy numbers, 
+when we implement automated precision tuning, the assistance indicated by the
+ block A, will be a tool like Ristretto or FPTuner, for our studied in this
+ project , have manually changed precision in caffe. Tuning to meet
+ the power and energy budget is an iterative process .
+
   \subsection{Data Sets Evaluated}
 
           \begin{figure}[h]
@@ -373,7 +408,7 @@ and 2x energy reduction over an accelerator baseline without almost compromising
                               & POWER                  & ENERGY                  & POWER  & ENERGY  & ACC  \\ \hline
     MNIST                     & 7.5 W                  & 4492 J                  & 6.5W   & 35 J    & 97.5\%    \\ \hline
     CIFAR-10                  & 9.5 W                  & 11662 J                 & 10 W    & 62 J    & 73.3\%    \\ \hline
-    IMAGENET                  & \multicolumn{2}{c|}{Caffe Model Zoo}             & 13 J   & 722 J   & --        \\ \hline
+    IMAGENET                  & \multicolumn{2}{c|}{Model Zoo}             & 13 J   & 722 J   & $\epsilon$ \\ \hline
   \end{tabular}
 \end{table}
 
@@ -388,7 +423,7 @@ and 2x energy reduction over an accelerator baseline without almost compromising
                               & POWER                  & ENERGY                  & POWER  & ENERGY  & ACC  \\ \hline
     MNIST                     & 8 W                    & 10828 J                 & 8.0 W  & 50 J    & 98.8\%    \\ \hline
     CIFAR-10                  & 10 W                   & 31211 J                 & 10.5 W & 65 J    & 74.3\%    \\ \hline
-    IMAGENET                  & \multicolumn{2}{c|}{Caffe Model Zoo}             & 13.5 J & 750 J   & --        \\ \hline
+    IMAGENET                  & \multicolumn{2}{c|}{Model Zoo}             & 13.5 J & 750 J   & $\epsilon$ \\ \hline
   \end{tabular}
 \end{table}
 
@@ -490,12 +525,22 @@ lacks, is quite easy, it involves changing the wrapper scripts to FPTuner, and n
 Reason for not taking this direction is that, we know the input space quite well so all the low-precision 
 literature on CNN, use fixed 16-bit and not floating format for 16-bit  ( C/C++ does not have native support
 for half precision, will need to use external libraries like MPFR) . In addition to this the authors of 
-FPTuner suggested that FPTuner (in its fully developed* version) is well suited for application that have
+FPTuner suggested that FPTuner (in its fully developed future versions) is well suited for application that have
 strict restriction on precision and error bounds and deep CNN’s training/classification are not such codes.
 The other direction was towards Improving its speed for precision allocation of medium/large expressions, 
 the search time depends on three Externals tools These tools are Linear programming solver (Gurobi) ,
 a Global optimizer (Gelphia) and A Tool for Rigorous Estimation of Round-off Floating-point Errors (FPTaylor) 
 We did not want to look at these tools for this class project, as the focus will be far away from Class goals.
+
+\subsection{Limitations of Training on GPU}
+
+We clearly observed the limitations of training on GPU, and we reacalled
+the need for a setup like the one we studied in class (vDNN), even 
+inference of large data sets like Imagenet runs our of memory on Jetson TK1,
+we had to do batch training and infernece, by reducing the lmbd size we
+load into memory at any given instance of time. This is indicated by $\epsilon$
+the the results tables, where we have probklems with getting correct accuracy
+numbers on ImageNet
 
 \section{RELATED WORK}
 
@@ -557,6 +602,25 @@ Master of Science
 
 \bibitem{c5} Caffe: Jia, Yangqing and Shelhamer, Evan and Donahue, Jeff and Karayev, Sergey and Long, Jonathan and Girshick, Ross and Guadarrama, Sergio and Darrell, Trevor
   \url{http://caffe.berkeleyvision.org/}
+
+\bibitem{tk1} TK-1 boards \url{http://elinux.org/Jetson_TK1}
+
+\bibitem{wt310} Yokogawa wt310 \url{http://tmi.yokogawa.com/us/products/digital-power-analyzers/digital-power-analyzers/digital-power-meter-wt300e/}
+
+\bibitem{c6} Energy savings and error tolerance of inexact computing in NN
+ Z. Du, A. Lingamneni, Y. Chen, K. Palem, O. Temam, and C. Wu, “Leveraging the Error Resilience of Machine-Learning Applications for Designing Highly Energy Efficient Accelerators,” in Proceedings of ASPDAC-19, 2014.
+
+\bibitem{c7} Chip-in-the-loop based training
+J. Fieres, K. Meier, and J. Schemmel, “A Convolutional Neural Network Tolerant of Synaptic Faults for Low-Power Analog Hardware,” in Proceedings of Artificial Neural Networks in Pattern Recognition, 2006
+
+\bibitem{c8} Limited Numerical precision DNN
+S. Gupta, A. Agrawal, K. Gopalakrishnan, and P. Narayanan, “Deep Learning with Limited Numerical Precision,” arXiv preprint arXiv:1502.02551, 2015.
+
+\bibitem{c9}  Effect of ADC precision in power consumption in analog computing
+M. Saberi, R. Lotfi, K. Mafinezhad, W. Serdijn et al., “Analysis of Power Consumption and Linearity in Capacitive Digital-to-Analog Converters used in Successive Approximation ADCs,” 2011
+
+\bibitem{c10} Low power hardware based on binary weights
+  \url{http://ieeexplore.ieee.org/abstract/document/7560203/}  
 
 \end{thebibliography}
 
